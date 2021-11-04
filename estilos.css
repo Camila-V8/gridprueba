@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=ZCOOL+KuaiLe&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+
+.grid-container {
+	display: grid;
+	gap: 6px;
+	grid-template: 
+	"header" 100px
+	"navbar" 50px
+	"contenido"	200px
+	"info" 300px
+	"registro" 300px
+	"footer" 90px
+	;
+}
+
+header {
+	font-family: 'ZCOOL KuaiLe', cursive;
+		text-align: center;
+	background-image: linear-gradient(rgb(92, 124, 40 ) 0%, rgb(95, 138, 43 ) 50%, rgb(110, 159, 51) 100%);
+}
+
+header a {
+	text-decoration: none;
+	color: #ffffff;	
+	text-shadow: 5px 5px 5px #242917;
+	padding: 20px;
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+.header{
+	grid-area: header;	
+}
+
+nav {
+	background-color: #000000;
+	font-family: 'Roboto Slab', serif;
+}
+
+li {
+	display: inline;
+}
+
+nav a {
+	color: #ffffff;
+	font-size: 25px;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 290px;
+}
+
+.navbar{
+	grid-area: navbar;
+}
+
+#contenido {
+	grid-area: contenido;
+	background-image: url(pattern.jpg);
+	height: 300px;
+}
+
+.hola {
+	background-color: #8BD65A;
+	width: 500px;
+	margin-left: 500px;
+	padding-top: 90px;
+}
+
+.hola p {
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	padding-bottom: 103px;
+	font-size: 20px;
+}
+.color {
+	color: #092FCF;
+}
+
+.foto {
+	position: absolute;
+	padding-top: 80px;
+	padding-left: 950px;
+}
+
+#info {
+	grid-area: info;
+	background-image: linear-gradient(rgb(22, 139, 15 ) 0%, rgb(16, 139, 60 ) 50%, rgb(13, 113, 70 ) 100%);
+	width: 40%;
+	height: 300px;
+}
+
+#info li {
+	color: #54FF62;
+	font-family: 'Roboto Slab', serif;
+	font-size: 25px;
+	text-align: left;
+	margin-left: 100px;
+	padding-top: 50px;
+}
+
+#imagenes {
+	float: right;
+	background-color: #000000;
+	width: 60%;
+	margin-top: -300px;
+	height: 300px;
+}
+.imagen {
+	margin-left: 50px;
+	margin-top: 20px;
+
+}
+
+.imagen2 {
+	margin-left: 480px;
+	margin-top: -260px;
+}
+
+.registro {
+	grid-area: registro;
+	width: 100%;
+	height: 300px;
+	background-image: url(pattern.jpg);
+	position: absolute;
+}
+
+form {
+	background-color: #AAE58C;
+	width: 50%;
+	margin-right: auto;
+	margin-left: 100px;
+	margin-top: 20px;
+	padding: 2%;
+	border-radius: 30px;
+	height: 250px;
+}
+
+.titulo {
+	font-family: 'Roboto Slab', serif;
+	color: #000000;
+	padding: 2px;
+}
+
+.cajas {
+	font-family: 'Roboto Slab', serif;
+	width: 60%;
+	height: 25px;
+	border-color: #0D8F2E;
+	background-color: #FDFFEC;
+	border-radius: 5px;
+}
+
+.gif {
+	margin-left: 1000px;
+	margin-top: -250px;
+}
+
+footer {
+	background-color: #000000;
+	font-family: 'Roboto Slab', serif;
+	width: 100%;
+	margin-top: 300px;
+	position: absolute;
+	height: 100px;
+}
+.footer {
+	grid-area: footer;
+}
+
+.logoUP {
+	padding-top: 10px;
+	padding-left: 100px;
+}
+
+.nombre {
+	padding-top: 30px;
+	padding-left: 670px;
+	margin-top: -70px;
+}
+.nombre a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 15px;
+}
+
+.serie {
+	margin-top: -50px;
+	padding-left: 1230px;
+}
+
+@media (min-width: 600px) {
+
+	.grid_container{
+
+		grid-template: 
+		"header 	header" 	100px 
+		"navbar 	navbar" 	100px
+		"contenido contenido" 		auto
+		" info 		imagenes"	100px
+		" registro 	registro"	100px
+		"footer 	footer" 	100px /
+		 200px 		auto;
+ 	}
+
+ header {
+	font-family: 'ZCOOL KuaiLe', cursive;
+		text-align: center;
+	background-image: linear-gradient(rgb(92, 124, 40 ) 0%, rgb(95, 138, 43 ) 50%, rgb(110, 159, 51) 100%);
+}
+
+header a {
+	text-decoration: none;
+	color: #ffffff;	
+	text-shadow: 5px 5px 5px #242917;
+	padding: 10px;
+	font-size: 25px;
+	margin-top: 40px;
+	padding-left: -50px;
+}
+
+.header{
+	grid-area: header;	
+}
+
+nav {
+	background-color: #000000;
+	font-family: 'Roboto Slab', serif;
+	width: 100%;
+}
+
+li {
+	display: inline;
+}
+
+nav a {
+	color: #ffffff;
+	font-size: 15px;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 150px;	
+}
+
+.navbar{
+	grid-area: navbar;
+}
+
+#contenido {
+	grid-area: contenido;
+	background-image: url(pattern.jpg);
+	height: 300px;
+}
+
+.hola {
+	background-color: #8BD65A;
+	width: 500px;
+	margin-left: 500px;
+	padding-top: 90px;
+}
+
+.hola p {
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	padding-bottom: 103px;
+	font-size: 20px;
+}
+.color {
+	color: #092FCF;
+}
+
+.foto {
+	position: absolute;
+	padding-top: 80px;
+	padding-left: 950px;
+}
+
+
+#info {
+	grid-area: info;
+	background-image: linear-gradient(rgb(22, 139, 15 ) 0%, rgb(16, 139, 60 ) 50%, rgb(13, 113, 70 ) 100%);
+	width: 40%;
+	height: 250px;
+}
+
+#info li {
+	color: #54FF62;
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	text-align: left;
+	margin-left: 50px;
+	padding-top: 50px;
+}
+
+#imagenes {
+	float: right;
+	background-color: #000000;
+	width: 60%;
+	margin-top: -250px;
+	height: 250px;
+}
+.imagen {
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+.imagen2 {
+	margin-left: 470px;
+	margin-top: -250px;
+}
+
+.registro {
+	grid-area: registro;
+	width: 100%;
+	height: 300px;
+	background-image: url(pattern.jpg);
+	position: absolute;
+}
+
+form {
+	background-color: #AAE58C;
+	width: 50%;
+	margin-right: auto;
+	margin-left: 100px;
+	margin-top: 20px;
+	padding: 2%;
+	border-radius: 30px;
+	height: 250px;
+}
+
+.titulo {
+	font-family: 'Roboto Slab', serif;
+	color: #000000;
+	padding: 2px;
+}
+
+.cajas {
+	font-family: 'Roboto Slab', serif;
+	width: 60%;
+	height: 25px;
+	border-color: #0D8F2E;
+	background-color: #FDFFEC;
+	border-radius: 5px;
+}
+
+.gif {
+	margin-left: 1000px;
+	margin-top: -250px;
+}
+
+footer {
+	background-color: #000000;
+	font-family: 'Roboto Slab', serif;
+	width: 100%;
+	margin-top: 300px;
+	position: absolute;
+	height: 90px;
+}
+.footer {
+	grid-area: footer;
+}
+
+.logoUP {
+	padding-top: 10px;
+	padding-left: 100px;
+}
+
+.nombre {
+	padding-top: 30px;
+	padding-left: 670px;
+	margin-top: -70px;
+}
+.nombre a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 15px;
+}
+
+.serie {
+	margin-top: -50px;
+	padding-left: 1230px;
+}
+}
